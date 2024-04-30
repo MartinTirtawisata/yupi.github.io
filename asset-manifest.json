@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/yupi.github.io/static/css/main.e4a9a7bb.css",
+    "main.js": "/yupi.github.io/static/js/main.a4842bf2.js",
+    "static/js/453.6b57ed6d.chunk.js": "/yupi.github.io/static/js/453.6b57ed6d.chunk.js",
+    "static/media/chicken-teriyaki.png": "/yupi.github.io/static/media/chicken-teriyaki.6a0939482330c19efec0.png",
+    "static/media/qrisImage.png": "/yupi.github.io/static/media/qrisImage.0ad66f82eac3af55726b.png",
+    "static/media/pizza.png": "/yupi.github.io/static/media/pizza.2cc383ccd151b671b109.png",
+    "static/media/grilled-salmon.png": "/yupi.github.io/static/media/grilled-salmon.6ba38696365f34f5a541.png",
+    "static/media/1O1-tosca.jpg": "/yupi.github.io/static/media/1O1-tosca.5614c6041474afff0eba.jpg",
+    "static/media/spaghetti.png": "/yupi.github.io/static/media/spaghetti.49c7c781cb78de8ea840.png",
+    "static/media/vegetable-stir-fry.png": "/yupi.github.io/static/media/vegetable-stir-fry.21433a8ba2f582c6c59c.png",
+    "static/media/chocolate-cake.png": "/yupi.github.io/static/media/chocolate-cake.e4dca561f7c26f6ef787.png",
+    "static/media/caesar-salad.png": "/yupi.github.io/static/media/caesar-salad.6321d2aa88244d361395.png",
+    "static/media/cheese-burger.png": "/yupi.github.io/static/media/cheese-burger.16f959aded32916e150b.png",
+    "static/media/chicken-wing.png": "/yupi.github.io/static/media/chicken-wing.f6c3090b0ba00443b165.png",
+    "static/media/taco.png": "/yupi.github.io/static/media/taco.8ef47777370278ce0be6.png",
+    "static/media/fries.png": "/yupi.github.io/static/media/fries.93f5f7a46bcc3c85595e.png",
+    "static/media/1O1-white.jpg": "/yupi.github.io/static/media/1O1-white.664c50392b3432031ebc.jpg",
+    "static/media/spaghetti-icon.png": "/yupi.github.io/static/media/spaghetti-icon.8b0d1a79ee127e6b9afc.png",
+    "static/media/vegetable-icon.png": "/yupi.github.io/static/media/vegetable-icon.90a73afb565370a6b4a3.png",
+    "static/media/salad-icon.png": "/yupi.github.io/static/media/salad-icon.bbd80adf1ce444b7ef0a.png",
+    "static/media/cake-icon.png": "/yupi.github.io/static/media/cake-icon.fcc6dfa3f8f4b4d261ee.png",
+    "static/media/burger-icon.png": "/yupi.github.io/static/media/burger-icon.39cb5379759ae89e4286.png",
+    "static/media/fries-icon.png": "/yupi.github.io/static/media/fries-icon.c74be9738a0e7f51930d.png",
+    "static/media/seafood-icon.png": "/yupi.github.io/static/media/seafood-icon.1f7643bb557a5b9fd09d.png",
+    "static/media/pizza-icon.png": "/yupi.github.io/static/media/pizza-icon.448eeeea360ad9e3e225.png",
+    "static/media/dumpling-icon.png": "/yupi.github.io/static/media/dumpling-icon.5c97b71dc1da80de55b1.png",
+    "static/media/shrimp-icon.png": "/yupi.github.io/static/media/shrimp-icon.839a13aec8c71cb151b5.png",
+    "index.html": "/yupi.github.io/index.html",
+    "main.e4a9a7bb.css.map": "/yupi.github.io/static/css/main.e4a9a7bb.css.map",
+    "main.a4842bf2.js.map": "/yupi.github.io/static/js/main.a4842bf2.js.map",
+    "453.6b57ed6d.chunk.js.map": "/yupi.github.io/static/js/453.6b57ed6d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4a9a7bb.css",
+    "static/js/main.a4842bf2.js"
+  ]
+}
