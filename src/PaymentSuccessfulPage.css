@@ -1,0 +1,195 @@
+/* PaymentSuccessfulPage.css */
+  .payment-success-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border: 3px solid black;
+    justify-content: center;
+    text-align: center;
+    max-width: 1024px; 
+}
+
+.payment-success-container {
+    display: block;
+    /* justify-self: center; */
+    margin: auto;
+    /* justify-content: center; */
+    /* text-align: center; */
+    padding: 10px 0px;
+    /* border: 3px solid orangered; */
+    width: 390px;
+    max-height: 544px;
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
+    /* white-space: nowrap; */
+    
+    /* background-image: url('./images/1O1-tosca.jpg'); */
+    /* background-position: top; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100%; */
+    
+    background-color: rgb(235, 235, 235);
+      
+    /* border: 3px solid blue; */
+}
+  
+
+.payment-success-meal-status-container {
+    border: 1px solid green;
+    padding: 0px 2px;
+    margin: 10px 6px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.payment-success-meal-status-container p {
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.payment-success-meal-status-container span {
+    font-size: 10px;
+    color: rgb(180, 180, 180);
+}
+/* 
+.payment-success-order-code {
+    font-size: 20px;
+} */
+
+
+
+
+
+
+
+.payment-success-order-details-container {
+    border: 1px solid blue;
+    padding: 0px 2px;
+    margin: 10px 6px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.payment-success-order-details-container p {
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+.payment-success-item-list-container {
+    border: 1px solid red;
+    padding: 0px 2px;
+    margin: 10px 6px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.payment-success-item-list-container h5 {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+
+.additional-charges-container {
+    border: 1px solid lightblue;
+    padding: 0px 2px;
+    margin: 10px 6px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+
+.service-charge {
+    border-top: 1px black dotted;
+    padding: 5px 8px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.service-charge span {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.tax {
+    border-top: 1px black dotted;
+    padding: 5px 8px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.tax span {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.total-amount {
+    border-top: 1px black dotted;
+    padding: 5px 8px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.total-amount span {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .payment-success-page h1 {
+    color: #4BB543; /* Green color for success */
+    border: 1px solid black;
+  }
+  
+  .items-recap {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 500px; /* Or any width that fits your design */
+    border: 1px solid black;
+  }
+  
+  .items-recap li {
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+  }
+  
+  .total {
+    font-size: 1.2em;
+    margin-top: 20px;
+    border: 1px solid black;
+  }

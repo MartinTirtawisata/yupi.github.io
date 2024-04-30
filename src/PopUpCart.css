@@ -1,0 +1,236 @@
+/* Popup.css */
+
+
+  
+.floating-cart-container {
+  position: fixed;
+  bottom: 20px;    /* Positioned 20px from the bottom */
+  left: 50%;     /* Positioned 20px from the right */
+  z-index: 1000;   /* Ensure it's above other content */
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* width: auto;     Auto width or fixed width as per your design */
+  /* padding: 5px; */
+  /* height: 30px; */
+  background-color: white; 
+  color: black;
+  border-radius: 8px; /* Rounded corners for aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  
+  cursor: pointer; /* Indicate the cart is clickable */
+  
+
+  width: 380px;
+  max-width: 390px;
+
+  /* border: 3px solid blue; */
+}
+
+/* Style for the item count badge */
+
+.expanded-cart-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white; 
+
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Optional shadow for depth */
+
+  width: 100%;
+
+  /* border: 3px solid purple; */
+}
+
+
+
+.expanded-cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+
+  /* border: 3px solid green; */
+}
+
+.expanded-cart-item-image {
+  width: 50px;
+  height: auto;
+  padding: 0px 7px;
+  border-radius: 10px;
+}
+
+.expanded-cart-item-description-container {
+  /* border: 3px solid blueviolet; */
+  width: 100%;
+}
+
+.expanded-cart-item-description-container h5{
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
+}
+
+
+
+
+
+
+
+.price-and-quantity-control-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.price p {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+
+
+
+.quantity-control-in-popup-cart {
+  display:flex;
+  gap: 5px;
+}
+
+.quantity-control-in-popup-cart button {
+  /* padding: 5px 10px; */
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  /* border: 1px solid #ccc; */
+  cursor: pointer;
+}
+
+.quantity-control-in-popup-cart button:hover {
+background-color: #e0e0e0;
+}
+
+.quantity-control-in-popup-cart span {
+min-width: 10px;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quick-summary-container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  /* border: 3px solid lightblue; */
+}
+
+.quick-summary-details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+
+.item-count-badge {
+  background-color: #ffffff;
+  color: black;
+  border-radius: 30%;
+  padding: 3px 9px;
+  margin: 0px 7px;
+  font-size: 10px;
+
+  /* border: 3px solid yellow; */
+}
+
+.description-shopping-cart {
+  font-size: 9px;
+  color: black;
+  width: 100%;
+}
+
+.total-popup-cart {
+  font-size: 9px;
+}
+
+
+.settle-payment-container {
+  background-color: green;
+  height: 30px;
+  border-radius: 0px 8px 8px 0px;
+
+}
+
+.settle-payment {
+  /* background-color: #ffffff; */
+  color: black;
+  border-radius: 20px;
+  /* padding: 9px 9px; */
+  margin: 0px 7px;
+  font-size: 10px;
+  /* align-items: right; */
+  /* justify-content: right; */
+
+  /* border: 3px solid yellow; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .popup-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 100;
+  width: 200px;
+} */
+
+
+
+
+
+

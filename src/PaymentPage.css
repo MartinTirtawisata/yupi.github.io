@@ -1,0 +1,228 @@
+.payment-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border: 3px solid black;
+    justify-content: center;
+    text-align: center;
+    max-width: 1024px; 
+}
+
+
+.payment-page-container {
+    display: block;
+    /* justify-self: center; */
+    margin: auto;
+    /* justify-content: center; */
+    /* text-align: center; */
+    padding: 10px 0px;
+    /* border: 3px solid orangered; */
+    width: 390px;
+    max-height: 544px;
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
+    /* white-space: nowrap; */
+    
+    /* background-image: url('./images/1O1-tosca.jpg'); */
+    /* background-position: top; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100%; */
+    
+    background-color: rgb(235, 235, 235);
+      
+    /* border: 3px solid blue; */
+}
+
+.payment-cart-location-container {
+    /* width: 100%; */
+    border: 1px solid white;
+    padding: 0px 2px;
+    margin: 10px 6px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.payment-page-location-room {
+    display: flex;
+    align-items: center;
+    /* border: 3px solid blue; */
+    padding: 5px 5px;
+}
+
+.payment-page-location-room label {
+    padding: 10px 0px;
+    /* margin: 10px 0; */
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.payment-page-location-room input {
+    width: 65%;
+    /* max-width: 1200px; */
+    padding: 10px;
+    margin: 5px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.payment-cart-recap-container{
+    /* width: 100%; */
+    border: 1px solid white;
+    padding: 0px 2px;
+    margin: 10px 6px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.payment-cart-recap-container h3 {
+    
+    text-align: left;
+    margin: 3px 5px;
+    font-weight: 700;
+    font-size: 14px;
+      
+}
+
+.payment-cart-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  
+    /* border: 3px solid green; */
+    margin: 7px 0px;
+  }
+
+  .payment-cart-item-image {
+    width: 50px;
+    height: auto;
+    padding: 0px 7px;
+    border-radius: 10px;
+  }
+  
+  .payment-cart-item-description-container {
+    /* border: 3px solid blueviolet; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .payment-cart-item-description-container h5 {
+      font-size: 11px;
+      margin: 5px 5px;
+  }
+
+  .payment-cart-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 5px;
+  }
+
+  .payment-cart-price p{
+    font-size: 11px;
+    font-weight: 700;
+    margin: auto;
+    color: orangered;
+  }
+
+  .payment-cart-quantity {
+      font-size: 9px;
+      color: grey;
+  }
+
+  .total-payment-cart-container{
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px black dotted;
+
+      padding: 5px 8px;
+      align-items: center;
+  }
+
+  .total-payment-cart {
+    font-size: 9px;
+  }
+
+  .total-payment-cart-price {
+      font-size: 12px;
+      font-weight: 600;
+
+  }
+
+  .total-payment-cart-pay-button {
+      border-radius: 50px;
+      padding: 8px 20px;
+      font-size: 10px;
+      background-color: orange;
+      border: orange 1px solid;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+  }
+
+  .total-payment-cart-pay-button:hover {
+      background-color: rgb(218, 120, 0);
+  }
+
+  .total-payment-cart-pay-button:hover {
+    background-color: rgb(168, 94, 2);
+}
+
+
+
+
+.qris-code {
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .payment-page input {
+    width: 30%;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  
+
+.payment-page-labels {
+    width: 100%;
+    border: 1px solid black;
+    max-width: 1200px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;   
+} */
+  
+/* .confirm-payment-button, .back-to-cart-button { */
+    /* Styles for buttons */
+  /* } */
+  
+  /* Add styles for the .payment-page container if necessary */

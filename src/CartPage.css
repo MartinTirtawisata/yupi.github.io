@@ -1,0 +1,64 @@
+/* CartPage.css */
+.cart-container {
+    max-width: 600px; /* Adjust based on your design preference */
+    margin: auto; /* Center the cart container on the page */
+    padding: 20px;
+    border: 1px solid black;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between items */
+    border: 1px solid black;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between image and item details */
+    border: 1px solid black;
+  }
+  
+  .item-image {
+    width: 100px; /* Adjust based on your preference */
+    height: 100px; /* Adjust based on your preference */
+    object-fit: cover; /* Adjust if necessary to maintain aspect ratio */
+    border: 1px solid black;
+  }
+  
+  .item-details {
+    display: flex;
+    flex-direction: column; /* Stack details vertically */
+    gap: 5px; /* Space between name, price, and remove button */
+    border: 1px solid black;
+  }
+  
+  /* Additional styling for buttons, headers, etc., as needed */
+
+  .quantity-control {
+      display:flex;
+      align-items: right;
+      gap: 10px;
+  }
+
+  .quantity-control button {
+      padding: 5px 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      cursor: pointer;
+  }
+
+  .quantity-control button:hover {
+    background-color: #e0e0e0;
+}
+
+.quantity-control span {
+    min-width: 20px;
+    text-align: center;
+}
+
+
+  
+         
+  
