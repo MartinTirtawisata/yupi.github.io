@@ -22,7 +22,7 @@
     padding: 10px 0px;
     /* border: 3px solid orangered; */
     width: 390px;
-    max-height: 544px;
+    min-height: 544px;
     /* overflow-x: hidden; */
     /* overflow-y: auto; */
     /* white-space: nowrap; */
@@ -35,6 +35,8 @@
     background-color: rgb(235, 235, 235);
       
     /* border: 3px solid blue; */
+
+    position: relative;
 }
 
 .payment-cart-location-container {
@@ -146,22 +148,118 @@
       color: grey;
   }
 
-  .total-payment-cart-container{
+
+
+  .total-payment-cart-and-payment-method-container {
+    position: absolute; /* Positions relative to nearest positioned ancestor (parent-container here) */
+    bottom: 0; /* Anchors the footer to the bottom */
+    left: 0; /* Stretches the footer from the left edge */
+    right: 0; /* Stretches across to the right edge of the parent container */
+    width: 100%; /* Ensures the footer stretches across the width of the screen */
+    background-color: #fff; /* Gives the footer a distinct background, change color as needed */
+    border-top: 1px solid #ccc; /* Adds a subtle border on top of the footer */
+    padding: 10px 0px; /* Adds padding inside the footer for spacing */
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
+    z-index: 1000; /* Ensures the footer is above other content */
+
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-method-container {
+    display: block;
+
+}
+
+.payment-method-details-container {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+
+    /* margin: 0px 0px 8px 0; */
+}
+
+
+.payment-method-details-container span, button {
+    margin: 0px 10px;
+}
+
+.payment-method-details-container span{
+    padding: 2px 0px;
+    font-size: 10px;
+    background-color: white;
+    border: white 1px solid;
+    /* color: white; */
+    font-weight: 600;
+    cursor: pointer;
+
+    margin: 0px 10px;
+}
+
+
+.payment-method-details-container button  {
+    /* border-radius: 50px; */
+    padding: 2px 20px;
+    font-size: 10px;
+    background-color: white;
+    border: white 1px solid;
+    /* color: white; */
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.payment-method-options-container {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-end;
+
+    /* margin: 0px 0px 8px 0; */
+}
+
+ul {
+    list-style-type: none; /* Removes bullets from the list */
+    padding: 0;
+    text-align: center; /* Centers the list items */
+    margin: 5px 20px 5px 0px;
+
+    /* overflow: hidden; Hides any overflow content during transition */
+    /* max-height: 0; */
+    transition: max-height 3s ease-in-out; /* Smooth transition for the max-height property */
+}
+
+ul.expanded {
+    max-height: 500px; /* Maximum height when expanded - adjust based on content */
+}
+
+li {
+    cursor: pointer; /* Indicates clickable items */
+    padding: 8px 0px;
+    background-color: white;
+    /* margin: 2px 5px; */
+    width: 100%; /* Ensures that list items expand to full container width */
+    font-size: 10px;
+}
+
+
+.total-payment-cart-container{
       display: flex;
       justify-content: space-between;
-      border-top: 1px black dotted;
-
-      padding: 5px 8px;
       align-items: center;
   }
 
   .total-payment-cart {
     font-size: 9px;
+    margin: 0px 10px;
   }
 
   .total-payment-cart-price {
       font-size: 12px;
       font-weight: 600;
+      
 
   }
 
@@ -174,6 +272,8 @@
       color: white;
       font-weight: 500;
       cursor: pointer;
+
+      margin: 0px 10px;
   }
 
   .total-payment-cart-pay-button:hover {

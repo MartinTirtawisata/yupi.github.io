@@ -1,8 +1,66 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import qrisImage from './images/qrisImage.png';
 import './PaymentPage.css';
 
 const PaymentPage = ({ cartItems, customerInfo, setCustomerInfo, goToMenu, handlePaymentSuccess }) => {
+
+  // the code here is backend... ==============================================
+const [qrisUrl, setQrisUrl] = useState('');
+
+
+
+useEffect(() => {
+  axios.get('http://localhost:3000/generate-qris-code') // Adjust URL as necessary
+    .then(response => {
+      setQrisUrl(response.data.qrisUrl); // Make sure response structure is correct
+    })
+    .catch(error => console.error('Error fetching QR code:', error));
+}, []);
+
+const [loading, setLoading] = useState('false');
+
+useEffect(() => {
+  setLoading(true);
+  axios.get('http://localhost:3000/generate-qris-code')
+    .then(response => {
+      setQrisUrl(response.data.qrisUrl);
+      setLoading(false);
+    })
+    .catch(error => {
+      console.error('Error fetching QR code:', error);
+      setLoading(false);
+    });
+}, []);
+
+
+
+
+
+
+// the code below is frontend... =============================================
+
+const [showOptions, setShowOptions] = useState(false);
+const [selectedPayment, setSelectedPayment] = useState('');
+
+const handlePaymentSelection = (method) => {
+  if (selectedPayment === method) {
+      // If the same method is clicked again, collapse the details section
+      setSelectedPayment('');  // Resetting the selectedPayment state
+      setShowOptions(false);  // Optionally keep or remove this line based on desired behavior
+  } else {
+      setSelectedPayment(method);  // Set the new payment method
+      setShowOptions(false);       // Close the options menu after selection
+  }
+};
+
+  const toggleDropdown = () => {
+    setShowOptions(!showOptions);  // Toggle the visibility of the payment options
+};
+
+
+
+  
   // const [customerInfo, setCustomerInfo] = useState({
   //   name: '',
   //   roomNumber: ''
@@ -150,10 +208,49 @@ const PaymentPage = ({ cartItems, customerInfo, setCustomerInfo, goToMenu, handl
 
               ))}
             
-            <div className="total-payment-cart-container">
-              <span className="total-payment-cart" >Payable <span className="total-payment-cart-price">{total.toLocaleString('en-US', { style: 'currency', currency: 'IDR',minimumFractionDigits: 0 })} </span></span>      
-              <button type="submit" onClick={handlePaymentSuccess} className="total-payment-cart-pay-button">To pay</button>
+            
+          </div>
+
+          <div className="total-payment-cart-and-payment-method-container">
+            
+            <div className="payment-method-container">
+
+              <div className="payment-method-details-container">
+                <span>Choose Payment Method</span>
+                <button onClick={toggleDropdown}>QRIS {showOptions ? '<' : '>'}</button>
+              </div>
+                
+
+              {showOptions && (
+                <div className="payment-method-options-container">
+                    <ul>
+                        <li onClick={() => handlePaymentSelection('QRIS')}>QRIS ></li>
+                        <li onClick={() => handlePaymentSelection('Credit Card')}>Credit Card ></li>
+                    </ul>
+                </div>
+                )}
+
+                {selectedPayment === 'QRIS' && (
+                    <div>
+                        <h3>Scan this QR code to pay</h3>
+                        <img src={qrisUrl} alt="QRIS Code" />
+                    </div>
+                )}
+                {selectedPayment === 'Credit Card' && (
+                    <div>
+                        <h3>Enter your credit card details</h3>
+                        {/* Credit card form components go here */}
+                    </div>
+                )}
+
             </div>
+           
+           <div className="total-payment-cart-container">
+            <span className="total-payment-cart" >Payable <span className="total-payment-cart-price">{total.toLocaleString('en-US', { style: 'currency', currency: 'IDR',minimumFractionDigits: 0 })} </span></span>      
+            <button type="submit" onClick={handlePaymentSuccess} className="total-payment-cart-pay-button">To pay</button>       
+           </div>
+
+            
           </div>
             
 
@@ -164,6 +261,9 @@ const PaymentPage = ({ cartItems, customerInfo, setCustomerInfo, goToMenu, handl
             <p>Your default payment method is QRIS. Please scan the QR code below to pay.</p>
             <img src={qrisImage} alt="QRIS Code" className="qris-code" />
           </div> */}
+
+          {/* {loading ? <p>Loading QR code...</p> : <img src={qrisUrl} alt="QRIS Code" className="qris-code" />} */}
+
             
             
           

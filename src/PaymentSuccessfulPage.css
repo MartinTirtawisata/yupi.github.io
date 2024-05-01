@@ -39,7 +39,7 @@
   
 
 .payment-success-meal-status-container {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     padding: 0px 2px;
     margin: 10px 6px;
     border-radius: 5px;
@@ -68,8 +68,8 @@
 
 
 .payment-success-order-details-container {
-    border: 1px solid blue;
-    padding: 0px 2px;
+    /* border: 1px solid blue; */
+    padding: 1px 2px;
     margin: 10px 6px;
     border-radius: 5px;
     background-color: white;
@@ -90,7 +90,7 @@
 
 
 .payment-success-item-list-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0px 2px;
     margin: 10px 6px;
     border-radius: 5px;
@@ -191,5 +191,5 @@
   .total {
     font-size: 1.2em;
     margin-top: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
